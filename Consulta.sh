@@ -7,7 +7,7 @@ for ip in $ip_list; do
     echo ""
     echo "Consultando a reputação do endereço IP $ip..."
     response=$(curl -s "https://api.abuseipdb.com/api/v2/check?ipAddress=$ip" \
-        -H "Key: d5c7a59006960c38f5e813b99efa654bc721b0dafbf3947b3e115549a100e82e129d>
+        -H "Key: YOUR-API-KEY>
         -H "Accept: application/json")
     if [[ "$response" =~ "error" ]]; then
         echo "Erro ao consultar a API para o endereço IP $ip."
